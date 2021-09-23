@@ -4,6 +4,12 @@ import { Component } from "@angular/core";
     selector: 'app-layout-main',
     templateUrl: "layout-main.component.html"
 })
-export class LayoutComponent{
+export class LayoutMainComponent{
+    
+    constructor() {}
+
+    ngOnInit(): void{
+        
+    }
 
 }

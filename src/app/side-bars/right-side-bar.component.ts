@@ -6,5 +6,6 @@ import { Component } from "@angular/core";
 })
 export class RightSideBarComponent {
     
+    NonActiveMessage: string ="When a friend starts an activity—like playing a game or hanging out on voice—we’ll show it here!"
 
 }

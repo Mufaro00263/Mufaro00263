@@ -5,6 +5,7 @@ import { Component } from "@angular/core";
     templateUrl: 'secondary-side-bar.component.html'
 })
 export class SecondarySideBarComponent {
-    
+
+    FindConvoMessage: string = "Find a conversation"
 
 }
