@@ -15,6 +15,8 @@ import { PendingFriendsPageComponent } from './pages/pending-friends-page.compon
 import { AllFriendsLayoutComponent } from './layout/all-friends-layout.component';
 import { BlockedFriendsLayoutComponent } from './layout/blocked-friends-layout.component';
 import { AddFriendLayoutComponent } from './layout/add-friend-layout.component';
+import { CommunityComponent } from './header/body/community.component';
+import { DiscoverHomePageComponent } from './pages/discover-home.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +33,8 @@ import { AddFriendLayoutComponent } from './layout/add-friend-layout.component';
     AllFriendsLayoutComponent,
     BlockedFriendsLayoutComponent,
     AddFriendLayoutComponent,
+    CommunityComponent,
+    DiscoverHomePageComponent
     
   ],
   imports: [
