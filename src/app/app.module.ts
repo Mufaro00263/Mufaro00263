@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { TopNavBarComponent } from './header/top-nav-bar.component';
@@ -17,6 +18,8 @@ import { BlockedFriendsLayoutComponent } from './layout/blocked-friends-layout.c
 import { AddFriendLayoutComponent } from './layout/add-friend-layout.component';
 import { CommunityComponent } from './header/body/community.component';
 import { DiscoverHomePageComponent } from './pages/discover-home.component';
+import { UserInfoComponent } from './layout/user-info.component';
+
 
 @NgModule({
   declarations: [
@@ -34,12 +37,15 @@ import { DiscoverHomePageComponent } from './pages/discover-home.component';
     BlockedFriendsLayoutComponent,
     AddFriendLayoutComponent,
     CommunityComponent,
-    DiscoverHomePageComponent
+    DiscoverHomePageComponent,
+    UserInfoComponent
     
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
