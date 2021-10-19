@@ -9,7 +9,6 @@ import { AddFriendLayoutComponent } from './layout/add-friend-layout.component';
 
 const routes: Routes = [
 
-  {path: 'home', component: LayoutMainComponent},
   {path: 'guild-disovery', component: DiscoverLayoutComponent},
   {path: 'all-friends', component: AllFriendsLayoutComponent},
   {path: 'pending-friends', component: PendingFriendsLayoutComponent},
