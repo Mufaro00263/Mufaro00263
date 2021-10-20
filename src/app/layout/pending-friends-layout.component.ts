@@ -6,10 +6,6 @@ import { Component } from "@angular/core";
 })
 export class PendingFriendsLayoutComponent{
     
-    constructor() {}
 
-    ngOnInit(): void{
-        
-    }
 
 }

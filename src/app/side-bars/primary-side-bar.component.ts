@@ -6,5 +6,6 @@ import { Component } from "@angular/core";
 })
 export class PrimarySideBarComponent {
     
+    Header: string="PrimarySideBar"
 
 }

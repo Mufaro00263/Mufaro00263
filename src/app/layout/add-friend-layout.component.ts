@@ -6,10 +6,5 @@ import { Component } from "@angular/core";
 })
 export class AddFriendLayoutComponent{
 
-    constructor() {}
-
-    ngOnInit(): void{
-        
-    }
-
+  
 }

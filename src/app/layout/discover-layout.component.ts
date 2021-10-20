@@ -12,7 +12,4 @@ export class DiscoverLayoutComponent implements OnInit{
         
     }
 
-    GenImpactTitle: string="Genshin Impact Official"
-    GenImpactDescription: string="Welcome to Teyvat Traveler! THis is the place to discuss with others about your favorite game: Genshin Impact!"
-
 }

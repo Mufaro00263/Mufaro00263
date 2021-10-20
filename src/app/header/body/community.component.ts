@@ -1,4 +1,6 @@
 import { Component, Input } from "@angular/core";
+import { Community } from "./community.model";
+import { mock_communities } from "./mock-community";
 
 @Component ({
     selector: 'community',
@@ -7,6 +9,13 @@ import { Component, Input } from "@angular/core";
 })
 export class CommunityComponent {
     
+    communities:Community[] = [];
+
+    constructor(){
+        for (var community of mock_communities){
+        this.communities.push(new Community(community));
+        }
+    }
 
     GenImpactTitle: string="Genshin Impact Official"
     GenImpactDescription: string="Welcome to Teyvat Traveler! THis is the place to discuss with others about your favorite game: Genshin Impact!"
@@ -20,7 +29,5 @@ export class CommunityComponent {
     FortniteTitle: string="Official Fortnite"
     FortniteDescription: string="The Official Fortnite Discord Server! JOin to follow news channels, LFG, and chat."
 
-    @Input()
-    title!: string;
 
 }

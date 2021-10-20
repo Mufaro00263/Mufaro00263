@@ -6,10 +6,5 @@ import { Component } from "@angular/core";
 })
 export class BlockedFriendsLayoutComponent{
 
-    constructor() {}
-
-    ngOnInit(): void{
-        
-    }
-
+  
 }

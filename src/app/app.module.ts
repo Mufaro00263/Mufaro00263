@@ -19,6 +19,7 @@ import { AddFriendLayoutComponent } from './layout/add-friend-layout.component';
 import { CommunityComponent } from './header/body/community.component';
 import { DiscoverHomePageComponent } from './pages/discover-home.component';
 import { UserInfoComponent } from './layout/user-info.component';
+import { CommunityCardComponent } from './header/body/community-card.component';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { UserInfoComponent } from './layout/user-info.component';
     AddFriendLayoutComponent,
     CommunityComponent,
     DiscoverHomePageComponent,
-    UserInfoComponent
+    UserInfoComponent,
+    CommunityCardComponent
     
   ],
   imports: [
