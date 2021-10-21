@@ -1,0 +1,12 @@
+<p *ngIf="Info==undefined">Failed fetching user info</p>
+    <div *ngIf="Info!=undefined">
+        <div class="card bg-dark text-white p-4 m-2" style="width: 18rem;">
+                <img class="card-img-top" src="/assets/{{Info.src}}" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-text">{{Info.title}}</h4>
+                    <p class="card-text">{{Info.description}}</p>
+                </div>
+            </div>
+        </div>
+    
+            

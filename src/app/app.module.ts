@@ -20,6 +20,7 @@ import { CommunityComponent } from './header/body/community.component';
 import { DiscoverHomePageComponent } from './pages/discover-home.component';
 import { UserInfoComponent } from './layout/user-info.component';
 import { CommunityCardComponent } from './header/body/community-card.component';
+import { FirebaseCardComponent } from './header/body/firebase-card.component';
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import { CommunityCardComponent } from './header/body/community-card.component';
     CommunityComponent,
     DiscoverHomePageComponent,
     UserInfoComponent,
-    CommunityCardComponent
+    CommunityCardComponent,
+    FirebaseCardComponent
     
   ],
   imports: [
