@@ -1,0 +1,9 @@
+  <p class="text-white"*ngIf="Profile==undefined">Failed fetching user info</p>
+  <div *ngIf="Profile!=undefined">
+    <div class="container-3baosl">
+      <a href="#" class="d-flex align-items-center text-white text-decoration-none "  aria-expanded="false">
+          <img src="/assets/{{Profile.imgSrc}}" alt="image" width="32" height="32" class="rounded-circle me-2">
+          <strong>{{Profile.name}}</strong>
+      </a>
+    </div>
+

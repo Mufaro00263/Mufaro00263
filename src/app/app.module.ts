@@ -21,6 +21,11 @@ import { DiscoverHomePageComponent } from './pages/discover-home.component';
 import { UserInfoComponent } from './layout/user-info.component';
 import { CommunityCardComponent } from './header/body/community-card.component';
 import { FirebaseCardComponent } from './header/body/firebase-card.component';
+import { UserProfileComponent } from './header/body/user-profile.component';
+import { UserInfoService } from './layout/user-info.service';
+import { UserProfileService } from './header/body/user-profile.service';
+import { EditUserInfoComponent } from './header/body/edit-user-profile.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -42,13 +47,18 @@ import { FirebaseCardComponent } from './header/body/firebase-card.component';
     DiscoverHomePageComponent,
     UserInfoComponent,
     CommunityCardComponent,
-    FirebaseCardComponent
+    FirebaseCardComponent,
+    UserProfileComponent,
+    UserProfileComponent,
+    EditUserInfoComponent
+    
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
     
   ],
   providers: [],
