@@ -1,0 +1,16 @@
+
+<a>
+    <form #postForm= "ngForm" (ngSubmit)="onUpdateProfileInfo(postForm.value)">
+      <div class="input-group">
+        <span class="input-group-text">Username</span>
+        <input type="text" class="form control" ngModel name="name">
+      </div>
+      <div class="input-group">
+        <span class="input-group-text">Image SRC</span>
+        <input type="text" class="form control" ngModel name="imgSrc">
+      </div>
+      <button class="btn btn-dark" type="submit">
+        Update Profile info
+      </button>
+    </form>
+  </a>
