@@ -26,6 +26,10 @@ import { UserInfoService } from './layout/user-info.service';
 import { UserProfileService } from './header/body/user-profile.service';
 import { EditUserInfoComponent } from './header/body/edit-user-profile.component';
 import { FormsModule } from '@angular/forms';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideDatabase,getDatabase } from '@angular/fire/database';
+import { AngularFireModule } from '@angular/fire/compat';
 
 
 @NgModule({
@@ -58,7 +62,10 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    AngularFireModule.initializeApp(environment.firebase, 'spotify-app'),
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideDatabase(() => getDatabase())
     
   ],
   providers: [],

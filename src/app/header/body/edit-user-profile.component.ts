@@ -1,6 +1,7 @@
 import { Component} from "@angular/core";
 import { UserProfileInfo } from "./user-profile.model";
 import { UserProfileService} from "../body/user-profile.service"
+import { DatabaseService } from "./database.service";
 
 @Component({
     selector: 'edit-user-profile',
@@ -8,8 +9,8 @@ import { UserProfileService} from "../body/user-profile.service"
 
 })
 export class EditUserInfoComponent {
-    constructor(private userProfileService: UserProfileService){
-
+    constructor(private userProfileService: UserProfileService, private dbService:DatabaseService){
+        dbService.showData();
     }
 
     onUpdateProfileInfo(info: UserProfileInfo){
