@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "discord-app-ba936": {
+      "hosting": {
+        "discord": [
+          "discord-app-ba936"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "discord-app-ba936"
+  }
+}

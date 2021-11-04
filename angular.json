@@ -101,6 +101,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "discord:build:production",
+            "firebaseProject": "discord-app-ba936",
+            "firebaseHostingSite": "discord-app-ba936"
+          }
         }
       }
     }
