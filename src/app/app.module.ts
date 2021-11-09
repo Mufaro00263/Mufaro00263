@@ -30,6 +30,7 @@ import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideDatabase,getDatabase } from '@angular/fire/database';
 import { AngularFireModule } from '@angular/fire/compat';
+import { LoginPageComponent } from './pages/login-page.component';
 
 
 @NgModule({
@@ -54,8 +55,8 @@ import { AngularFireModule } from '@angular/fire/compat';
     FirebaseCardComponent,
     UserProfileComponent,
     UserProfileComponent,
-    EditUserInfoComponent
-    
+    EditUserInfoComponent,
+    LoginPageComponent
     
   ],
   imports: [
