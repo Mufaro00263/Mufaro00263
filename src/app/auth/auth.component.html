@@ -1,0 +1,18 @@
+<div class="container-fluid bg-dark">
+    
+        <form #authForm = "ngForm" (ngSubmit) = "onSubmit(authForm)">
+            <div class="input-group mb-3">
+                    <input type="text" name="email" placeholder="email" ngModel name = "email" required email>
+            </div>
+            <div class="input-group mb-3">
+                    <input type="password" name="login" placeholder="password" ngModel name = "password" required password minlength="8">
+            </div>
+            <div class="input-group mb-3">
+                    <button type="submit" class="btn btn-light m-1" [disabled] = !authForm.valid (click) = "buttonClicked = 'Login'">Login</button>
+        
+                    <button type="submit"  class="btn btn-light m-1" [disabled] = !authForm.valid (click) = "buttonClicked = 'Sign Up'">Sign Up</button>
+            </div>
+            
+        </form>
+    
+</div>

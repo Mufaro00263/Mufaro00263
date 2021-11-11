@@ -31,6 +31,7 @@ import { environment } from '../environments/environment';
 import { provideDatabase,getDatabase } from '@angular/fire/database';
 import { AngularFireModule } from '@angular/fire/compat';
 import { LoginPageComponent } from './pages/login-page.component';
+import { AuthComponent } from './auth/auth.component';
 
 
 @NgModule({
@@ -56,7 +57,8 @@ import { LoginPageComponent } from './pages/login-page.component';
     UserProfileComponent,
     UserProfileComponent,
     EditUserInfoComponent,
-    LoginPageComponent
+    LoginPageComponent,
+    AuthComponent
     
   ],
   imports: [

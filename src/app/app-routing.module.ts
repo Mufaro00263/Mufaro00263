@@ -6,6 +6,7 @@ import { AllFriendsLayoutComponent } from './layout/all-friends-layout.component
 import { PendingFriendsLayoutComponent } from './layout/pending-friends-layout.component';
 import { BlockedFriendsLayoutComponent } from './layout/blocked-friends-layout.component';
 import { AddFriendLayoutComponent } from './layout/add-friend-layout.component';
+import { AuthComponent } from './auth/auth.component';
 
 const routes: Routes = [
 
@@ -14,6 +15,7 @@ const routes: Routes = [
   {path: 'pending-friends', component: PendingFriendsLayoutComponent},
   {path: 'blocked-friends', component: BlockedFriendsLayoutComponent},
   {path: 'add-friend', component: AddFriendLayoutComponent},
+  {path: 'auth', component: AuthComponent}
 ]
 
 @NgModule({
